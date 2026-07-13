@@ -8,7 +8,12 @@ Instead of displaying text in a normal column, the application automatically ref
 
 ## Preview
 
-(Add screenshots here after uploading them)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/5fcc8511-773b-442b-9951-2052cc25d06e" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/81820c66-2a7a-4d14-a22b-c4912a85f257" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f08df40a-964d-46e6-b135-db1143d75c4b" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7dd7e56d-7a1a-4083-b594-9488d9fc78a6" />
+
+
 
 ---
 
