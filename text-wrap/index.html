@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowText AI</title>
+  </head>
+  <body>
+    <div id="app">
+      <main id="container">
+        <header class="hero" id="hero">
+          <p class="eyebrow">FLOWTEXT AI</p>
+          <h1>The Future of Artificial Intelligence</h1>
+          <p class="subtitle">Interactive Magazine Layout Engine</p>
+          <p class="deck">Dynamic text reflow using Cheng Lou's Pretext</p>
+          <div class="byline">
+            <span>Author: Apoorva Dwivedi</span>
+            <span id="currentDate"></span>
+          </div>
+        </header>
+
+        <section class="magazine-stage">
+          <canvas id="canvas"></canvas>
+
+          <figure class="image-frame" id="frame-img1">
+            <img id="img1" class="fixed-image" src="/images/robot.jpg" alt="AI Robot" draggable="false" />
+            <button class="resize-handle" aria-label="Resize image"></button>
+          </figure>
+
+          <figure class="image-frame" id="frame-img2">
+            <img id="img2" class="fixed-image" src="/images/coding.jpg" alt="Coding Illustration" draggable="false" />
+            <button class="resize-handle" aria-label="Resize image"></button>
+          </figure>
+
+          <figure class="image-frame" id="frame-img3">
+            <img id="img3" class="fixed-image" src="/images/cyber.jpg" alt="Cyber Security" draggable="false" />
+            <button class="resize-handle" aria-label="Resize image"></button>
+          </figure>
+        </section>
+
+        <section id="mobileArticle" class="mobile-article"></section>
+      </main>
+
+      <aside class="control-panel">
+        <h2>FlowText AI</h2>
+
+        <div class="toolbar">
+          <button id="themeBtn" type="button">Dark</button>
+          <button id="resetBtn" type="button">Reset</button>
+          <button id="exportPngBtn" type="button">PNG</button>
+          <button id="exportJpegBtn" type="button">JPEG</button>
+          <button id="exportPdfBtn" type="button">PDF</button>
+        </div>
+
+        <details open>
+          <summary>Article Editor</summary>
+          <textarea id="articleEditor" rows="9"></textarea>
+          <div class="editor-meta">
+            <span><strong id="editorWords">0</strong> words</span>
+            <span><strong id="editorChars">0</strong> chars</span>
+            <span><strong id="editorTime">0</strong> min</span>
+          </div>
+          <button id="updateArticleBtn" type="button" class="primary">Update Layout</button>
+        </details>
+
+        <details>
+          <summary>Image Manager</summary>
+
+          <label class="drop-zone" id="dropZone">
+            <input id="imageUpload" type="file" accept="image/*" />
+            Drop image or choose file
+          </label>
+
+          <label>
+            Replace image
+            <select id="imageSelect">
+              <option value="img1">Image 1</option>
+              <option value="img2">Image 2</option>
+              <option value="img3">Image 3</option>
+            </select>
+          </label>
+
+          <label>
+            Size
+            <input id="imageSize" type="range" min="140" max="360" value="240" />
+          </label>
+
+          <div class="toolbar">
+            <button id="deleteImageBtn" type="button">Delete</button>
+            <button id="resetImageBtn" type="button">Reset Image</button>
+          </div>
+        </details>
+
+        <details open>
+          <summary>Statistics</summary>
+          <dl class="stats" id="statsPanel"></dl>
+        </details>
+
+        <p class="shortcuts">Ctrl+S save, Ctrl+E export PNG, Esc reset.</p>
+      </aside>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
