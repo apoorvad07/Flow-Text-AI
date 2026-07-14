@@ -5,6 +5,9 @@ FlowText AI is an interactive magazine-style article layout engine built using J
 Instead of displaying text in a normal column, the application automatically reflows the article around images, creating a clean magazine-like reading experience.
 
 ---
+## Live Demo
+
+**Try it here:** https://flow-text-ai.vercel.app/
 
 ## Preview
 
